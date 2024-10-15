@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marmeto Cart Page</title>
+  <link rel="stylesheet" href="index.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+<header>
+  <div class="logo"><img src="logo.png" alt="High Quality"></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#shop">Cart</a>
+  </nav>
+  <div class="icons">
+    <span>🔍</span>
+    <span style="font-size: 40px;">♡</span>
+    <span>🛒</span>
+    <span class="cart-count" id="cart-count">0</span>
+  </div>
+</header>
+
+<div class="container" id="home">
+  <div class="cart-header">
+    <h1>Cart</h1>
+  </div>
+  <div class="breadcrumb">
+    <a href="#">Home</a> &gt; <span>Cart</span>
+  </div>
+</div>
+
+<div class="cart-section" id="shop">
+  <div class="cart-items" id="cart-items">
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Cart items will be dynamically populated here -->
+      </tbody>
+    </table>
+  </div>
+
+  <div class="cart-totals">
+    <h2>Cart Totals</h2>
+    <div class="totals-row">
+      <span>Subtotal</span>
+      <span id="subtotal">Rs. 0.00</span>
+    </div>
+    <div class="totals-row">
+      <span>Total</span>
+      <span id="total" class="total">Rs. 0.00</span>
+    </div>
+    <button class="checkout-btn">Check Out</button>
+  </div>
+</div>
+
+<!-- Features Section -->
+<div class="features-section" id="about">
+  <div class="feature">
+    <img src="https://img.icons8.com/ios/50/best-seller.png" alt="High Quality">
+    <div>
+      <h4>High Quality</h4>
+      <p>crafted from top materials</p>
+    </div>
+  </div>
+  <div class="feature">
+    <img src="https://img.icons8.com/ios/50/security-checked--v1.png" alt="Warranty Protection">
+    <div>
+      <h4>Warranty Protection</h4>
+      <p>Over 2 years</p>
+    </div>
+  </div>
+  <div class="feature">
+    <img src="https://img.icons8.com/ios/50/000000/free-shipping.png" alt="Free Shipping">
+    <div>
+      <h4>Free Shipping</h4>
+      <p>Order over Rs.150</p>
+    </div>
+  </div>
+  <div class="feature">
+    <img src="https://img.icons8.com/ios/50/online-support--v1.png" alt="24/7 Support">
+    <div>
+      <h4>24 / 7 Support</h4>
+      <p>Dedicated support</p>
+    </div>
+  </div>
+</div>
+
+<!-- Popup for delete confirmation -->
+<div class="popup-overlay">
+  <div class="popup">
+    <p>Are you sure you want to delete this item?</p>
+    <button id="confirm-delete">Yes</button>
+    <button id="cancel-delete">No</button>
+  </div>
+</div>
+
+<script src="index.js"></script> <!-- Link to the JavaScript file -->
+
+</body>
+</html>
